@@ -35,8 +35,8 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "ds-alurabooks-base",
-  "author": "vinicios neves",
+  "name": "ds-alurabooks-felipebc2",
+  "author": "Felipe Castro",
   "module": "dist/ds-alurabooks-base.esm.js",
   "size-limit": [
     {
@@ -51,14 +51,17 @@
   "devDependencies": {
     "@babel/core": "^7.19.6",
     "@size-limit/preset-small-lib": "^8.1.0",
-    "@storybook/addon-essentials": "^6.5.13",
+    "@storybook/addon-actions": "6.0.0",
+    "@storybook/addon-essentials": "6.0.0",
     "@storybook/addon-info": "^5.3.21",
-    "@storybook/addon-links": "^6.5.13",
-    "@storybook/addons": "^6.5.13",
-    "@storybook/react": "^6.5.13",
+    "@storybook/addon-links": "6.0.0",
+    "@storybook/addons": "6.0.0",
+    "@storybook/core": "6.0.0",
+    "@storybook/node-logger": "6.0.0",
+    "@storybook/react": "6.0.0",
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.8",
-    "babel-loader": "^9.1.0",
+    "babel-loader": "8.2.5",
     "husky": "^8.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
