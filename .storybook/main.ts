@@ -1,12 +1,12 @@
 import type { StorybookConfig } from '@storybook/react-webpack5';
 
 const config: StorybookConfig = {
-  stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
+  stories: ['../stories/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
   addons: [
     '@storybook/addon-links',
     '@storybook/addon-essentials',
-    '@storybook/addon-onboarding',
-    '@storybook/addon-interactions',
+    '@storybook/addon-interactions'
+    // Removido: '@storybook/addon-onboarding' (causa bugs e não é essencial)
   ],
   framework: {
     name: '@storybook/react-webpack5',
@@ -17,7 +17,8 @@ const config: StorybookConfig = {
     },
   },
   docs: {
-    autodocs: 'tag',
+    autodocs: 'tag', // garante geração automática a partir de stories com `tags: ['autodocs']`
   },
 };
+
 export default config;
